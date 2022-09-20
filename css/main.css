@@ -41,15 +41,12 @@ h4 {
   font-weight: 300;
   font-size: 1.125em;
   margin: 20px 0;
+  font-weight: bold;
 }
 
 p {
   font-size: .875em;
   line-height: 1.285;
-}
-
-img {
-  width: 25%;
 }
 
 figure{
@@ -60,9 +57,8 @@ content-wrapper{
   width: 90%;
   margin: 50px 0;
 }
-                      /* Base header & footer */
-header,
-footer {
+                      /* Base header  */
+header {
   background-color: ;
   display: flex;
   justify-content: center;
@@ -94,43 +90,62 @@ header nav ul {
 header nav ul li {
   font-size: 1.125em;
 }
+/***** project section *****/
 
-footer {
-  text-align: center;
-  flex-direction: row;
+.project_item {
+  display: flex;
+  width: 500px;
+  margin: auto;
+  justify-content: space-between;
+  border: 2px solid #777;
+  box-sizing: border-box;
 }
 
-footer .contact {
-  margin-bottom: 50px;
+figure {
+  width: 200px;
+  margin: 0;
+  padding: 8px;
+
 }
 
-footer h2 {
+figure img {
+  width: 100%;
   margin: 0;
 }
 
-footer .content-wrapper {
-  width: 55%;
-  margin: 50px 0;
-}
-footer .social-icons {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+figure figcaption {
+  text-align: left;
+  padding: 8px 4px;
 }
 
-footer .social-icons p {
+.btn {
   background-color: ;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: ;
+  color: ;
+  padding: 5px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+  margin: 10px 30px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/***** contacts & social media section *****/
+
+footer #contact {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+  padding: left;
 }
 
-footer .social-icons p i {
-  font-size: 1.3125em;
+#socialnetwork-header {
+    font-weight: bold;
+    font-size: 29px;
+    line-height: 44px;
+    margin: 40px 0 0 0;
 }
+.social-icons ul {
+  display: inline-flex;
 
-footer .copyright {
-  margin: 20px 0;
+}
