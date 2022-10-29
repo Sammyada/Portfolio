@@ -1,38 +1,44 @@
 /***** BASE STYLES *****/
 
 html {
+  color: #222;
   font-size: 16px;
+  line-height: 1.4;
 }
 
 body{
   font-family: 'Roboto', sans-serif;
   font-size: 1em;
   line-height: 1.4;
-  color:
+  background-color: gray;
+  margin: 0;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-ol{
-  list-style-type: decimal;
-  margin: 0;
-  padding: 0;
+a {
+  text-decoration: none;
 }
 
-a {
-  color: ;
-  text-decoration: none;
+
+h1 {
+  font-family: 'raleway';
+  font-weight: bold;
+  font-size: 1.75rem;
+  line-height: 1.5;
+  width: 100%;
 }
 
 h2 {
   font-family: 'gimlet-display', serif;
   font-weight: 300;
   font-size: 1.875em;
-  margin: 0;
+  width: 100%;
 }
 
 h3,
@@ -44,81 +50,394 @@ h4 {
   font-weight: bold;
 }
 
-p {
-  font-size: .875em;
-  line-height: 1.285;
+h5 {
+  font-size: 1.5rem;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+span {
+  font-weight: bold;
 }
 
 figure{
+  margin: 20px 0 40px 0;
+}
+/**** structure setting *****/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header, #about, #projects, footer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row-wrap;
+}
+
+#skills {
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 85%
+}
+
+#about p, #projects p {
+  width:100%;
+  text-align: left;
+}
+h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
-content-wrapper{
-  width: 90%;
-  margin: 50px 0;
+p{
+  margin: 0;
 }
-                      /* Base header  */
+
+/****** Margin & Padding for elements*****/
+
 header {
-  background-color: ;
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+nav {
+  padding-bottom: 60px;
+}
+
+#projects {
+  padding-top: 60px;
+}
+
+#skills {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+#about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+footer {
+  padding: 80px 0;
+}
+
+h2 {
+  margin-top: 10px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h4 {
+  margin: 0 0 40px 0;
+}
+
+/**** project ****/
+
+#projects h2 {
+  width: 100%;
+}
+
+#projects .description {
+  margin: 0 0 30px 0;
+}
+
+.project-link {
+  margin: 40px 0 60px 0;
+}
+
+/***** about ******/
+
+#about h2 {
+  margin: 40px 0 40px 0;
+}
+
+.about-text{
+  margin: 0 0 30px 0;
+}
+/****** contact *****/
+
+.contact-info {
+  margin: 0 0 60px 0;
+}
+
+.contact-title {
+  margin: 0 0 40px 0;
+}
+
+/****** header*******/
+header {
+  background-color: #ffe8d6;
+}
+
+header nav ul li {
+  font-size: .75rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+header h1 {
+  width: 100%;
+}
+
+/******* mobile styles ******/
+#projects,
+#skills {
+  width: 100%;
+}
+.portfolio-wrapper {
+  display:flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column figure {
+  width: 100%;
+} 
+
+.project-link {
+  background-color: #453E4F;
+  padding: .75rem 3.75rem;
+  border-radius: 30px;
+  color: #FFFFFF;
+}
+
+.project-link:hover {
+  background-color: #CAC4D1;
+  color: #453E4F;
+}
+
+.language-wrapper,
+.tools-wrapper {
+  display: inline-block;
+  background-color: greenyellow;
+  box-shadow: 5px 5px 20px green;
+}
+#skills {
+  width: 100%;
+}
+/*** About ***/
+
+#about h2,
+#about p {
+  color: #000000;
+}
+
+/******skills*****/
+.skills-header {
+  display: flex;
+  font-size: 3rem;
+  padding: 20px 0;
+  color: #000000;
+  padding-bottom: 10px;
+  padding-left: 50px;
+}
+
+.skills-container {
+  display: grid;
+  row-gap: 2rem;
+  padding-left: 55px;
+  padding-top: 1rem;
+}
+
+/***** base header style ****/
+
+footer {
+  background-color: aquamarine;
+}
+
+footer .contact-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+footer .contact-info {
+  width: 60%;
+}
+
+footer .contact-social-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer ul {
+  width: 100%;
+}
+
+footer .social-icons li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons li i {
+  font-size: 1.875rem;
+  color: #453e4f;
+}
+
+/*****NAV*******/
+
+header {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding-top: 30px;
+  padding-bottom: 60px;
 }
 
-header{
-  padding: 50px 0;
-}
-
-header nav {
-  width: 60%;
-  font-size: 1.125em;
+header nav{
+  display: flex;
+  font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
-  display: flex;
-  justify-content: space-around;
   align-items: center;
   flex-flow: row wrap;
+  padding-bottom: 20px;
 }
 
 header nav ul {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: stretch;
+  flex-direction: column;
+  padding-bottom: 20px;
 }
 
 header nav ul li {
-  font-size: 1.125em;
+  font-size: 1.256em
 }
-/***** project section *****/
 
-.project_item {
+/****Header*****/
+.header-wrapper {
+  margin-left: 100px;
+  padding-left: 150px;
+  padding-top: 60px;
+}
+/***** ABOUT *****/
+#about {
+  width: 100%;
+  align-items: center;
+
+}
+
+#about .content-wrapper {
   display: flex;
-  width: 500px;
-  margin: auto;
-  justify-content: space-between;
-  border: 2px solid #777;
-  box-sizing: border-box;
+  justify-content: space-around;
 }
 
-figure {
-  width: 200px;
-  margin: 0;
-  padding: 8px;
+#about img {
+  padding-bottom: 40px;
+  display: block;
+}
 
+#me {
+  width: 90%;
+}
+
+#about  {
+  padding: 20px 0;
+  text-align: center;
+}
+
+#about h1 {
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 40px;
+  padding: 20px 0;
+
+}
+
+#about p {
+  font-size: 30px;
+  text-align: center;
+}
+/*****portfolio-class*****/
+
+.language-wrapper {
+  text-align: center;
+}
+/***** projects ******/
+
+#projects h2 {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  background-color: ;
+  padding: 30px;
+  box-shadow: 5px 5px 20px #000000;
+  position: relative;
+  height: 1100px;
+  width: 350px;
+  object-fit: contain;
+}
+
+#projects .column p{
+  object-fit: contain;
+
+}
+
+/* project-box */
+#projects .project-box {
+  background-color: ;
 }
 
 figure img {
   width: 100%;
   margin: 0;
+  display: block;
 }
 
-figure figcaption {
-  text-align: left;
-  padding: 8px 4px;
+#projects .item {
+ text-align: center;
 }
 
-.btn {
+#projects .description .btn {
   background-color: ;
   border: ;
   color: ;
@@ -130,22 +449,449 @@ figure figcaption {
   cursor: pointer;
   text-decoration: none;
 }
-/***** contacts & social media section *****/
 
-footer #contact {
-  font-size: 32px;
-  font-weight: 400;
-  line-height: 44px;
-  padding: left;
+/**** copyright ****/
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+}
+/**** Tablet styles ****/
+@media only screen and (min-width:768px) {
+
+  /* general styles */ 
+  .content-wrapper {
+    max-width: 640px;
+  }
+
+  /* font styles */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  header nav ul li {
+    font-size: 1rem;
+  }
+
+  /***** element margins *****/
+  header {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  nav {
+    margin: 0 0 80px 0;
+  } 
+
+  #about {
+    padding: 80px 0;
+  }
+
+  #skills {
+    padding-bottom: 80px;
+  }
+
+  #projects {
+    padding-top: 80px;
+  } 
+
+  footer {
+    padding: 140px 0;
+    padding-bottom: 80px;
+  }
+  
+  h2 {
+    margin-top: 80px;
+  } 
+
+  .portfolio-header {
+    margin: 0 0 60px 0;
+  }
+
+  .project-description {
+    margin: 0 0 30px 0;
+  }
+
+  .project-link {
+    margin: 40px 0 60px 0;
+  }
+
+  #skills {
+    padding-top: 80px;
+  }
+
+  .skills-header {
+    margin-bottom: 40px;
+  }
+
+  .about-info {
+    margin: 80px 0;
+  }
+
+  .about-text {
+    margin: 0 0 30px 0;
+  }
+
+  .contact-info {
+    margin: 80px 0;
+  }
+
+  .contact-title {
+    margin: 0 0 30px 0;
+  }
+
+  /**** header ****/ 
+  header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  header nav {
+    /* keep if using hamburger menu */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-transform: uppercase;
+  }
+
+  header nav ul {
+    /* keep if using hamburger menu */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-content: stretch;
+    padding-bottom: 20px;
+  }
+  .home-title {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+
+  /****** portfolio ******/
+  .portfolio-wrapper {
+    justify-content: space-around;
+  }
+
+  .column {
+    width: 45%;
+    align-items: center;
+  }
+
+  .project-description {
+    width: 95%;
+  }
+
+  .language-wrapper,
+  .tool-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+    text-transform: uppercase;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  /* about */
+  .about-content-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  #about figure {
+    width: 60%;
+  }
+
+  /* Footer */
+  .contact-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer .contact-info {
+    width: 33%;
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
+  footer .social-icons li i {
+    font-size: 2rem;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
 }
 
-#socialnetwork-header {
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
-}
-.social-icons ul {
-  display: inline-flex;
+@media only screen and (min-width:1024px) {
 
+  /* added for landscape tablets and iPad Pro */
+  .content-wrapper {
+    max-width: 900px;
+  }
+
+  .about-info h3 {
+    font-size: 3.5rem;
+  }
+}
+
+/**** Desktop styles ****/
+@media only screen and (min-width: 1200px) {
+
+  .content-wrapper {
+    max-width: 1450px;
+  }
+
+/********* font styles *****/
+
+ h1{
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
+h4 {
+  font-size: 1,25rem;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+.project-link,
+.language-wrapper,
+.tools-wrapper {
+  font-size: 1rem;
+}
+
+/**** element margins *****/
+header {
+  padding-top: 80px;
+  padding-bottom: 140px;
+}
+
+nav {
+  margin-bottom: 80px;
+}
+
+#projects {
+  padding-top: 80px;
+}
+
+#skills {
+  padding-bottom: 120px;
+}
+
+#about {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+footer {
+  padding: 140px 0 140px;
+}
+
+h2 {
+  margin: 40px 0 0 0;
+}
+
+.portfolio-header {
+  margin: 0 0 60px 0;
+}
+
+.project-description {
+  margin: 0 0 30px 0;
+}
+
+.project-link {
+  margin: 40px 0 80px 0;
+}
+
+#skills {
+  padding-top: 120px;
+}
+
+#skills .content-wrapper {
+  max-width: 900px;
+}
+
+.skills-header {
+  margin-bottom: 40px;
+}
+
+.about-info h3 {
+  margin: 0;
+}
+
+.about-info h4 {
+  margin: 40px 0;
+}
+
+.about-text {
+  margin: 0 0 30px 0;
+}
+
+.contact-email-box {
+  margin: 80px 0 80px 0;
+}
+
+.contact-title {
+  margin: 0 0 30px 0;
+}
+
+#projects h2 {
+  padding-bottom: 80px;
+}
+
+  /****** header *****/
+
+header .content-wrapper {
+  justify-content: flex-end;
+}
+
+header nav {
+  justify-content: flex-end;
+  width: 45%;
+
+}
+
+header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: space-between;
+    padding-bottom: 20px;
+}
+
+nav ul li a:hover, 
+nav #contact-link:hover {
+  background-color: aquamarine;
+  color: #453E4F;
+  padding: 10px 10px;
+  border-radius: 30px;
+}
+.home-title {
+  max-width: 95%;
+}
+
+/**** about *****/
+.about-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+} 
+
+#about figure {
+  width: 35%;
+  margin-top: 0;
+}
+
+.about-info {
+  width: 58%;
+}
+
+/**** portfolio ***/
+
+.project-box figure img{
+  height: auto;
+}
+
+.column {
+  width: 30%;
+}
+
+/* skill */
+
+.skills-container {
+  grid-template-columns: repeat(3, 350px);
+  column-gap: 2rem;
+  padding-left: 150px;
+}
+
+.skills-header {
+  justify-content: space-evenly;
+  width: 150%;
+
+}
+/*** contact ***/
+
+footer .contact-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+footer .content-wrapper {
+  max-width: 70%;
+}
+
+footer .social-icons {
+  width: 12.5em;
+  justify-content: space-between;
+}
+
+  /**** copyright ****/
+.copyright {
+  display: flex;
+  justify-content: center;
+   width: 100%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  }
+} 
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
 }
