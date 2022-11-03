@@ -273,6 +273,7 @@ header h1 {
   display: grid;
   row-gap: 2rem;
   padding-left: 55px;
+  padding-right: 55px;
   padding-top: 1rem;
 }
 
