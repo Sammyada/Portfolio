@@ -230,6 +230,10 @@ header h1 {
   width: 100%;
 } 
 
+figcaption {
+  text-decoration: underline;
+}
+
 .project-link {
   background-color: #453E4F;
   padding: .75rem 3.75rem;
