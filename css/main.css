@@ -48,7 +48,6 @@ h4 {
   font-weight: 300;
   font-size: 1.125em;
   margin: 20px 0;
-  font-weight: bold;
 }
 
 h5 {
@@ -80,18 +79,11 @@ audio, canvas, iframe, img, svg, video {
   padding: 0;
   box-sizing: border-box;
 }
-header, #about, #projects, footer {
+header, #about,#skills, #projects, footer {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-flow: row wrap;
-}
-
-#skills {
-display: flex;
-justify-content: space-evenly;
-text-align: center;
-flex-flow: row wrap;
 }
 
 .content-wrapper {
@@ -254,6 +246,7 @@ figcaption {
   box-shadow: 5px 5px 20px #af3faf;
   padding-bottom: 20px;
 }
+
 #skills {
   width: 100%;
 }
@@ -271,7 +264,6 @@ figcaption {
   padding: 20px 0;
   color: #000000;
   padding-bottom: 10px;
-  padding-left: 50px;
 }
 
 .skills-container {
@@ -312,6 +304,7 @@ footer .contact-info {
   transition: all 250ms;
   border: 0;
   font-size: 16px;
+  font-weight: bold;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -385,7 +378,7 @@ footer .social-icons li i {
 }
 
 #about p {
-  font-size: 20px;
+  font-size: 18px;
   text-align: left;
   max-width: 700px;
 }
@@ -471,14 +464,11 @@ figure img {
   top: 0px;
   left: 0px;
 }
-
-@media (min-width: 768px) {
-  .project-link {
+@media only screen and (min-width:768px) {
+  .project-link{
     padding: 13px 50px 13px;
   }
 }
-
-
 /**** copyright ****/
 .copyright {
   display: flex;
@@ -892,6 +882,10 @@ figcaption:hover {
   column-gap: 2rem;
 }
 
+.skills-header {
+  padding-left: 300px;
+}
+
 /*** contact ***/
 
 footer .contact-wrapper {
@@ -904,6 +898,12 @@ footer .contact-wrapper {
 footer .content-wrapper {
   max-width: 70%;
 }
+
+.contact-email-box,
+.contact-social-section {
+  width: 45%;
+}
+
 
 footer .social-icons {
   width: 12.5em;
