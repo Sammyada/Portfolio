@@ -483,7 +483,7 @@ figure img {
 
   /* general styles */ 
   .content-wrapper {
-    max-width: 640px;
+    max-width: 750px;
   }
 
   /* font styles */
@@ -611,6 +611,10 @@ figure img {
     align-items: center;
   }
 
+  #projects {
+    width: 100%;
+  }
+
   .project-description {
     width: 95%;
   }
@@ -639,8 +643,9 @@ figure img {
     justify-content: space-between;
   }
 
-  footer .contact-info {
-    width: 33%;
+  footer .contact-email-box,
+  .contact-social-section {
+    width: 40%;
   }
 
   footer ul {
@@ -728,6 +733,10 @@ header {
 
 nav {
   margin-bottom: 80px;
+}
+
+.nav-link {
+  padding: 10px 10px;
 }
 
 #projects {
