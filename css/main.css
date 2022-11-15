@@ -908,8 +908,11 @@ footer .content-wrapper {
   max-width: 70%;
 }
 
-.contact-email-box,
 .contact-social-section {
+  width: 20%;
+}
+
+.contact-email-box {
   width: 45%;
 }
 
