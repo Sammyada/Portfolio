@@ -796,7 +796,8 @@ h2 {
   margin: 0 0 30px 0;
 }
 
-.contact-email-box {
+.contact-email-box,
+.contact-social-section {
   margin: 80px 0 80px 0;
 }
 
@@ -909,7 +910,7 @@ footer .content-wrapper {
 }
 
 .contact-social-section {
-  width: 40%;
+  width: 45%;
 }
 
 .contact-email-box {
